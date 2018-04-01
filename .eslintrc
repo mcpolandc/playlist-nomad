@@ -1,0 +1,24 @@
+
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+  "parser": "typescript-eslint-parser",
+  "parserOptions": {
+    "sourceTypes": {
+      "modules": true
+    }
+  },
+  "rules": {
+    "semi": [2, "never"],
+    "import/extensions": 0,
+    "comma-dangle": 0,
+    "eol-last": 0,
+    "import/no-unresolved": 0,
+    "no-unused-expressions": 0
+  }
+}
+      

@@ -1,0 +1,38 @@
+{
+  "name": "playlist-nomad",
+  "version": "1.0.0",
+  "description": "Migrate your music playlists from one service to another. e.g. YouTube -> Spotify, Spotify -> Apple Music.",
+  "main": "index.ts",
+  "author": "mcpolandc",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "eslint src --ext ts",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^22.2.2",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.2",
+    "tsc": "^1.20150623.0",
+    "typescript": "^2.8.1",
+    "typescript-eslint-parser": "^14.0.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)test\\.ts)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ]
+  }
+}
