@@ -1,5 +1,19 @@
 {
   "compilerOptions": {
-    "module": "commonjs"
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "dist",
+    "sourceMap": true
   },
+  "files": [
+    "./src/typings.d.ts",
+    "./node_modules/@types/jest/index.d.ts"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "examples/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

@@ -1,0 +1,10 @@
+{
+  "source_service": {
+    "name": "youtube",
+    "key": "AIzaSyAjbjJEWmEn68cj4JXAQNwutk-CCVli1U8",
+    "playlistId": "PLBu00vBNpdQtTZcBsZ4ZL-M9rjlijqOri"
+  },
+  "destination_service": {
+    "name": "spotify"
+  }
+}
