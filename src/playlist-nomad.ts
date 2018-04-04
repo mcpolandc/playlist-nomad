@@ -15,7 +15,7 @@ class PlaylistNomad {
     // initialise appropriate source handler
     switch (options.source_service.name) {
       case servicetypes.YOUTUBE:
-        this.sourceService = new YoutubeServiceHandler()
+        this.sourceService = new YoutubeServiceHandler(options.source_service.key)
         break;
       
       default:
@@ -25,7 +25,7 @@ class PlaylistNomad {
     // initialise appropriate destination handler
     switch (options.destination_service.name) {
       case servicetypes.SPOTIFY:
-        this.destService = new SpotifyServiceHandler()
+        this.destService = new SpotifyServiceHandler(options.destination_service.key)
         break;
     
       default:
@@ -36,6 +36,7 @@ class PlaylistNomad {
   public async PerformPlaylistMigration(options) {
     this.initialiseServiceHandlers(options)
     const playlist = this.sourceService.GetPlaylist(options)
+    this.destService.MigratePlaylist(playlist)
   }
 }
 

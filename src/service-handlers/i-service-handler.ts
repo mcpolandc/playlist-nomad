@@ -1,6 +1,6 @@
 interface IServiceHandler {
-  GetPlaylist(options)
-  MigratePlaylist()
+  GetPlaylist(playlistId: string)
+  MigratePlaylist(options)
 }
 
 export default IServiceHandler

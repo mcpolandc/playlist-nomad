@@ -9,21 +9,21 @@ import IServiceHandler from './i-service-handler'
 class YoutubeServiceHandler implements IServiceHandler {
   private google: GoogleApis
   private youtube
+  private authKey: string
 
-  constructor() {
+  constructor(authKey: string) {
     this.google = google
     this.youtube = google.youtube('v3')
+    this.authKey = authKey
   }
 
-  public async GetPlaylist(options) {
-    const { key, playlistId } = options.youtube
-
+  public async GetPlaylist(playlistId: string) {
     let returnedData
     let playlistData: Object[] = []
 
     do {
       returnedData = await this.youtube.playlistItems.list({
-        key,
+        key: this.authKey,
         playlistId,
         part: 'snippet',
         pageToken: returnedData && returnedData.data.nextPageToken ? returnedData.data.nextPageToken : ''
@@ -38,7 +38,7 @@ class YoutubeServiceHandler implements IServiceHandler {
     return playlistData
   }
 
-  public async MigratePlaylist() {
+  public async MigratePlaylist(options) {
 
   }
   

@@ -5,6 +5,7 @@
     "playlistId": "PLBu00vBNpdQtTZcBsZ4ZL-M9rjlijqOri"
   },
   "destination_service": {
-    "name": "spotify"
+    "name": "spotify",
+    "key": "BQB1hVZkBNZYXdP60c3o2fhhm1cQGVo-mcStNI7B3yRg4uTCEOColUgW_UV4yKihNrz7IMfMCvuCWeU0ur3JQD9IHqLuomaxA-15OjY3gOQol-Xm39ESP6fH4ghvBjzZd8WI7WsEQINWhIBYcCcw_VyDnsahLB9whw8tnXPgwj3--J4DZCLCGtJEYNomoRnHyn45wEq_F1I"
   }
 }
